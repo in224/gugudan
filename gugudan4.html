@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gugudan4</title>
+</head>
+<body>
+    <table>
+        <tbody id="tbody">
+        </tbody>
+        </table>
+
+<script>
+
+    const tbody = document.querySelector('#tbody');
+
+    for (let i = 1; i <= 9; i++){
+
+        const newTr = document.createElement('tr');
+        tbody.appendChild(newTr);
+
+        for (let j = 1; j <= 10-i; j++){
+            const newTd = document.createElement('td');
+            newTr.appendChild(newTd);
+            newTd.textContent = `${i}*${j} = ${i*j}\t`;
+            };
+        };
+
+
+</script>
+</body>
+</html>
